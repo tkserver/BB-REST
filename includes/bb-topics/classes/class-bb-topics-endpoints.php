@@ -332,8 +332,8 @@ class BB_REST_Topics_Controller extends WP_REST_Controller {
 			// Added by Tony Korologos
 			'reply_count'		    => bbp_get_topic_reply_count($topic->ID),
 			'forum'			    => bbp_get_forum_title($topic->post_parent),
-			'author_name' => bbp_get_topic_author($topic->ID),
-			'author_avatar' => get_avatar( $topic->post_author, 32 ),
+			'author_name' 		    => bbp_get_topic_author($topic->ID),
+			'author_avatar' 	    => get_avatar( $topic->post_author, 32 ),
 			// end Tony Korologos
 			// the following might require a check if the parent is a forurm, maybe
 			// if that's the case it'll be something like the following:
